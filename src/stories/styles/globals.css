@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tw-ab-btn-danger {
+  @apply bg-red-700 border-red-700 hover:border-red-800 hover:bg-red-800 active:bg-red-900 focus:bg-red-800 focus:border-red-800 active:border-red-900 rounded-lg;
+}
+
+.tw-ab-btn-primary {
+  @apply bg-indigo-700 border-indigo-700 hover:border-indigo-800 hover:bg-indigo-800 active:bg-indigo-900 focus:bg-indigo-800 focus:border-indigo-800 active:border-indigo-900 rounded-lg;
+}
+
+.tw-ab-btn-dashed {
+  @apply border-indigo-700 hover:border-indigo-900 text-indigo-700 rounded-lg hover:text-indigo-900 active:text-indigo-900 active:border-indigo-900 focus:text-indigo-900 focus:border-indigo-900;
+}

@@ -1,0 +1,53 @@
+{
+  "name": "@nanosrlorg/coolabds",
+  "version": "1.0.0",
+  "private": false,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "tailwind 3",
+    "storybook",
+    "antdesign",
+    "design system",
+    "next"
+  ],
+  "author": "nanosrlabs",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "sbk": "start-storybook -p 6006",
+    "sbk-build": "build-storybook",
+    "pkg-build": "rm -rf dist && mkdir dist && babel src/stories tailwind.config.js -d dist --copy-files",
+    "pkg-update": "npm run pkg-build && npm version patch && npm publish --access public"
+  },
+  "dependencies": {
+    "@storybook/addon-postcss": "^2.0.0",
+    "antd": "^4.17.3",
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-links": "^6.4.9",
+    "@storybook/react": "^6.4.9",
+    "autoprefixer": "^10.4.0",
+    "babel-loader": "^8.2.3",
+    "eslint": "8.4.1",
+    "eslint-config-next": "12.0.7",
+    "eslint-plugin-storybook": "^0.5.3",
+    "postcss": "^8.4.4",
+    "tailwindcss": "^3.0.1"
+  }
+}
